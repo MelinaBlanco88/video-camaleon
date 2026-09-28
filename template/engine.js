@@ -1,4 +1,4 @@
-/* video-pizarra · engine.js
+/* video-camaleon · engine.js
  * Hand-drawn "whiteboard" video engine: SVG + GSAP, rendered frame by frame (deterministic).
  * The project's scenes.js calls:  bootVideo(async (V) => { ...build scenes with V.* ... }, config)
  * Everything here is a pure function of time: renderAt(t) seeks the paused timeline and re-applies

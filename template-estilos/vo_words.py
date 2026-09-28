@@ -2,13 +2,13 @@
 para ajustar la duración (`dur`) de cada escena al audio.
 Uso: python3 vo_words.py audio/vo.wav [idioma=es]
 Usa AssemblyAI (recomendado: capta el habla baja y da tiempos exactos). Llave en ASSEMBLYAI_API_KEY o en
-~/.config/video-estilos-pro/keys.env (ASSEMBLYAI_API_KEY=...). Sin llave, cae a faster-whisper (menos preciso:
+~/.config/video-camaleon/keys.env (ASSEMBLYAI_API_KEY=...). Sin llave, cae a faster-whisper (menos preciso:
 se come palabras dichas en voz baja; NO lo uses para decidir cortes)."""
 import json, os, subprocess, sys, time, urllib.request
 path = sys.argv[1]; lang = sys.argv[2] if len(sys.argv) > 2 else 'es'
 def aai_key():
     if os.environ.get('ASSEMBLYAI_API_KEY'): return os.environ['ASSEMBLYAI_API_KEY']
-    for f in ('~/.config/video-estilos-pro/keys.env', '~/.config/video-pizarra/keys.env'):
+    for f in ('~/.config/video-camaleon/keys.env', '~/.config/video-camaleon/keys.env'):
         f = os.path.expanduser(f)
         if os.path.exists(f):
             for ln in open(f):

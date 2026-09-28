@@ -1,9 +1,9 @@
 ---
-name: video-pizarra
+name: video-camaleon
 description: Crea videos animados estilo pizarrón / dibujo a mano (whiteboard) sobre CUALQUIER tema — con una mascota que actúa, texto escrito a plumón/gis/lápiz, fondos distintos por escena, transiciones creativas al ritmo de la música, efectos de sonido y un final tipo storyboard — todo generado con código (SVG + GSAP) y renderizado a MP4 vertical u horizontal. Incluye además 4 estilos extra (acuarela, acuarela viva, cuaderno/bullet journal y minimal blanco) con otro motor por código. Todo es personalizable: colores y tipografía de marca, su logo o personaje como mascota, su foto, sus capturas, su voz, formato e idioma. Si el pedido ya trae lo necesario arranca directo; si no, entrevista solo lo que falte (tema, fuentes, formato, personaje, música, CTA). Úsalo cuando alguien pida "un video animado", "video tipo pizarrón", "whiteboard animation", "video explicativo animado", "video con dibujos", "video de noticia animado", "reel animado sobre X", "hazme un video de [tema] con una mascota", o quiera explicar un tema/noticia/lanzamiento/concepto en video corto sin grabarse, aunque no diga "pizarrón".
 ---
 
-# video-pizarra
+# video-camaleon
 
 Convierte cualquier tema en un video animado de ~60–75 s que se siente dibujado a mano: una mascota que actúa, frases escritas en vivo, cada escena con su propio fondo y herramienta, transiciones que conectan una escena con la siguiente y caen en el beat de la música.
 
@@ -96,7 +96,7 @@ Reglas que vienen de lo que ya funcionó (y de lo que no):
 
 ```bash
 PROJ=~/Documents/<slug-del-video>      # o la carpeta que pida la persona
-mkdir -p "$PROJ/audio" && cp -R ~/.claude/skills/video-pizarra/template/. "$PROJ/"
+mkdir -p "$PROJ/audio" && cp -R ~/.claude/skills/video-camaleon/template/. "$PROJ/"
 cd "$PROJ" && npm install && npx playwright install chromium
 cp scenes.example.js scenes.js           # punto de partida: el ejemplo completo
 ```

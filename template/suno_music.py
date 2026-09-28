@@ -1,6 +1,6 @@
 """Generate an instrumental music bed with Suno through api.sunoapi.org.
 Usage: SUNO_API_KEY=... python3 suno_music.py "<style>" "<title>" audio/music.mp3
-The key can also live in ~/.config/video-pizarra/keys.env as SUNO_API_KEY=...
+The key can also live in ~/.config/video-camaleon/keys.env as SUNO_API_KEY=...
 Tip: ask for an upbeat 100-120 BPM instrumental with a clear pulse so transitions can land on beats."""
 import json, os, sys, time, urllib.request, urllib.error
 
@@ -9,11 +9,11 @@ UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML,
 
 def key():
     if os.environ.get('SUNO_API_KEY'): return os.environ['SUNO_API_KEY']
-    f = os.path.expanduser('~/.config/video-pizarra/keys.env')
+    f = os.path.expanduser('~/.config/video-camaleon/keys.env')
     if os.path.exists(f):
         for ln in open(f):
             if ln.startswith('SUNO_API_KEY='): return ln.strip().split('=', 1)[1]
-    sys.exit('Falta SUNO_API_KEY (env o ~/.config/video-pizarra/keys.env)')
+    sys.exit('Falta SUNO_API_KEY (env o ~/.config/video-camaleon/keys.env)')
 
 KEY = key()
 def req(path, body=None):

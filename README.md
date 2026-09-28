@@ -1,4 +1,4 @@
-# video-pizarra 🎬✏️
+# video-camaleon 🦎🎬
 
 Skill para **Claude Code** que crea videos animados estilo pizarrón (dibujo a mano) sobre cualquier tema:
 una mascota que actúa, texto que se escribe solo con plumón/gis/lápiz, fondos distintos por escena,
@@ -10,7 +10,7 @@ música, llamado a la acción) y te enseña el storyboard para que lo apruebes.
 
 ## Instalación
 
-1. Copia la carpeta `video-pizarra` a `~/.claude/skills/` (en Windows: `%USERPROFILE%\.claude\skills\`).
+1. Copia la carpeta `video-camaleon` a `~/.claude/skills/` (en Windows: `%USERPROFILE%\.claude\skills\`).
 2. Instala lo necesario (una sola vez):
    - **Node.js 18+** → https://nodejs.org
    - **ffmpeg** → Mac: `brew install ffmpeg` · Windows: `winget install ffmpeg` · Linux: `sudo apt install ffmpeg`
@@ -28,7 +28,7 @@ Pídelo con tus palabras: tus colores, tu tipografía (cualquier fuente de Googl
 
 - **Con Suno**: consigue una API key en https://sunoapi.org y guárdala así:
   ```
-  mkdir -p ~/.config/video-pizarra && echo "SUNO_API_KEY=tu_key" > ~/.config/video-pizarra/keys.env
+  mkdir -p ~/.config/video-camaleon && echo "SUNO_API_KEY=tu_key" > ~/.config/video-camaleon/keys.env
   ```
 - **Tu propia canción**: pon el mp3 en `audio/music.mp3` dentro de la carpeta del proyecto. Asegúrate de tener derechos para usarla.
 - **Sin música**: el video queda solo con efectos de sonido.
